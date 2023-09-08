@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <script>
+            
+            //Lets create a JS object
+            var student1 = {
+                //1. Property:Value
+                fname:"Rishabh",
+                lname:"Bairagi",
+                age:21,
+                salary:'',
+                address:"neemuch",
+                qualification:"12th",
+                //Function defination
+                getMyFullAddress(){
+                    console.log("Hi "+this.fname+this.lname+this.age+this.salary+this.address+this.qualification);
+                }
+            }; // Student1 is a type of JS object
+            let student2 = 'Rishabh Bairagi 136 Teachers colony Neemuch MP INDIA'; // Student2 is a type of string
+            const student3 = 40; //Student4 is a type of number
+
+            let student4={
+                fname:"Abhishek",
+                surname:"Bairagi",
+                age:23,
+                salary:10000,
+                address:"Teachers Colony",
+                getAddress(){
+
+                    // every function return something
+                    return this.address;
+                }
+            }
+            
+            //how to access information from JS object
+
+            console.log(student1.fname);
+            console.log(student1.getMyFullAddress());
+            console.log(student4.fname);
+            console.log(student4.getAddress());  
+        </script>
+    </body>
+</html>
